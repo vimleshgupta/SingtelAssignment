@@ -4,7 +4,7 @@ public abstract class Animal {
 
     void walk() {
         if (canWalk())
-        System.out.println("I am walking");
+            System.out.println("I am walking");
     }
 
     public void fly() {
