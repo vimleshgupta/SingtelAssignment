@@ -28,11 +28,6 @@ public class Bird extends Animal {
     }
 
     @Override
-    public boolean canSing() {
-        return sound != null && !sound.isEmpty();
-    }
-
-    @Override
     public boolean canSwim() {
         return canSwim;
     }
@@ -50,7 +45,8 @@ public class Bird extends Animal {
 enum BirdType {
     DEFAULT(true, false, "tweet"),
     DUCK(true, true, "Quack, quack"),
-    CHICKEN(false, false, "Cluck, cluck");
+    CHICKEN(false, false, "Cluck, cluck"),
+    PARROT(true, false, "");
 
     boolean canFly;
     boolean canSwim;

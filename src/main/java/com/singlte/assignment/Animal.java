@@ -22,9 +22,16 @@ public abstract class Animal {
         return "";
     }
 
-    public abstract boolean canFly();
+    public boolean canFly() {
+        return false;
+    }
 
-    public abstract boolean canSing();
+    public boolean canSing() {
+        return getSound() != null && !getSound().isEmpty();
+    }
 
-    public abstract boolean canSwim();
+    public boolean canSwim() {
+        return false;
+    }
+
 }
