@@ -3,6 +3,7 @@ package com.singlte.assignment;
 public abstract class Animal {
 
     void walk() {
+        if (canWalk())
         System.out.println("I am walking");
     }
 
@@ -20,6 +21,10 @@ public abstract class Animal {
 
     public String getSound() {
         return "";
+    }
+
+    public boolean canWalk() {
+        return true;
     }
 
     public boolean canFly() {
