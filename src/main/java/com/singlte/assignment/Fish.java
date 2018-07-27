@@ -6,7 +6,7 @@ import static com.singlte.assignment.FishType.DEFAULT;
 import static com.singlte.assignment.Size.LARGE;
 import static com.singlte.assignment.Size.SMALL;
 
-public class Fish extends Animal {
+public class Fish extends AbstractFish {
 
     private final FishType fishType;
     private final Size size;
@@ -28,16 +28,6 @@ public class Fish extends Animal {
         this.color = fishType.color;
         this.eatsFish = fishType.eatsFish;
         this.makesJokes = fishType.makesJokes;
-    }
-
-    @Override
-    public boolean canWalk() {
-        return false;
-    }
-
-    @Override
-    public boolean canSwim() {
-        return true;
     }
 
     public Size getSize() {
