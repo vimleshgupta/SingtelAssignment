@@ -6,7 +6,7 @@ public class Bird extends Animal {
     private final BirdType birdType;
     private boolean canFly;
     private boolean canSwim;
-    private String sound;
+    protected String sound;
 
     public Bird() {
         this.birdType = DEFAULT;
@@ -48,7 +48,9 @@ public class Bird extends Animal {
 }
 
 enum BirdType {
-    DEFAULT(true, false, "tweet"), DUCK(true, true, "Quack, quack"), CHICKEN(false, false, "Cluck, cluck");
+    DEFAULT(true, false, "tweet"),
+    DUCK(true, true, "Quack, quack"),
+    CHICKEN(false, false, "Cluck, cluck");
 
     boolean canFly;
     boolean canSwim;
