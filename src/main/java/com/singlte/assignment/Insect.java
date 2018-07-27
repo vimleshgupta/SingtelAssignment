@@ -21,10 +21,14 @@ public class Insect extends Animal {
     public boolean canWalk() {
         return this.canWalk;
     }
+
+    public InsectType getInsectType() {
+        return insectType;
+    }
 }
 
 enum InsectType {
-    BUTTERFLY(true, true);
+    CATERPILLAR(false, true), BUTTERFLY(true, true);
 
     boolean canFly;
     boolean canWalk;
